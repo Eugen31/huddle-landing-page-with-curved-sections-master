@@ -1,0 +1,57 @@
+// ### Primary Colors
+$Pink: hsl(322, 100%, 66%);
+$Light-Pink: hsl(321, 100%, 78%);
+$Light-Red: hsl(0, 100%, 63%);
+// ### Neutral Colors
+$Very-Dark-Cyan: hsl(192, 100%, 9%);
+$Very-Pale-Blue: hsl(207, 100%, 98%);
+$section-color:rgb(246, 251, 255);
+$Wave-color:hsl(192, 100%, 9%);
+// min-max width
+// - Mobile: 375px - Desktop: 1440px
+// media querry
+$medium-devices: 600px;
+$large-devices: 1024px;
+// ### Headings font
+$title-font: 'Poppins',
+'sans-serif';
+// ### Body font
+$content-font:'Open Sans',
+sans-serif;
+$regular:400;
+$bold:600;
+$boldest:700;
+// 
+@mixin center {
+    margin: 0 auto;
+}
+
+@mixin inline($content:center, $direction:row, $align:flex-start) {
+    width: 100%;
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin block($align:flex-start) {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: $align;
+}
+
+@mixin button ($b-radius:50px, $bg-color:$Pink, $color:$Very-Pale-Blue) {
+    max-width: 100%;
+    padding: 1em 3em;
+    border-radius: $b-radius;
+    color: $color;
+    background-color: $bg-color;
+    border: none;
+    cursor: pointer;
+    font-size: calc(0.5em + 0.8vw);
+    &:hover {
+        opacity: 60%;
+    }
+}

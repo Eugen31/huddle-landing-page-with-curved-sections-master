@@ -1,0 +1,208 @@
+    // here start the main-content
+    .main-content {
+        @include center;
+        width: 100%;
+        max-width: 1440px;
+        font-weight: $bold;
+        text-align: center;
+        .getStart-section {
+            width: 100%;
+            max-width: 65rem;
+            @include center;
+            h1 {
+                width: 100%;
+                font-family: $title-font;
+                font-size: calc(1.4rem + 1.5vw);
+            }
+            p {
+                width: 80%;
+                max-width: 37rem;
+                padding: 1.7em 0;
+                font-size: calc(0.5rem + 0.8vw);
+                line-height: 1.5em;
+                @include center;
+            }
+            button {
+                @include button;
+            }
+        }
+        .statistic-section {
+            .statistic-image {
+                width: 100%;
+                padding: 6em 1.5em;
+                img {
+                    max-width: 100%;
+                }
+            }
+            .statistic-container-graphics {
+                padding: 5em 0;
+                @media only screen and (min-width: $medium-devices) {
+                    width: 100%;
+                    max-width: 56rem;
+                    @include center;
+                    @include inline;
+                }
+                .statistic {
+                    width: 100%;
+                    @include center;
+                    padding: 3em 0;
+                    .statistic-logo {
+                        @include inline(flex-start);
+                        padding-left: 35%;
+                        img {
+                            width: calc(1.25rem + 1vh);
+                        }
+                    }
+                    .statistic-number {
+                        font-family: $title-font;
+                        font-size: calc(3rem + 1vw);
+                    }
+                    .statistic-text {
+                        font-size: calc(0.7rem + 0.5vw);
+                        opacity: 60%;
+                    }
+                }
+            }
+        }
+        .grow-section {
+            width: 100%;
+            font-size: calc(0.7rem + 0.45vw);
+            line-height: 1.5rem;
+            .top-bg {
+                width: 100%;
+                height: 30vw;
+                background: url("./images/bg-section-top-mobile-1.svg") no-repeat;
+                background-size: cover;
+                @media only screen and (min-width: $large-devices) {
+                    height: 11vw;
+                    background: url("./images/bg-section-top-desktop-1.svg") no-repeat;
+                }
+            }
+            .buttom-bg {
+                width: 100%;
+                height: 14vw;
+                background: url("./images/bg-section-bottom-mobile-1.svg") no-repeat;
+                background-size: cover;
+                @media only screen and (min-width: $large-devices) {
+                    height: 14vw;
+                    background: url("./images/bg-section-bottom-desktop-1.svg") no-repeat;
+                }
+            }
+            .grow-container {
+                background-color: $section-color;
+                padding: 2em 3em;
+                @media only screen and (min-width: $medium-devices) {
+                    @include inline(space-between, row-reverse, center);
+                    gap: 10em;
+                    .grow-image {
+                        width: 50%;
+                    }
+                    .grow-text {
+                        width: 50%;
+                        text-align: left;
+                    }
+                }
+                img {
+                    max-width: 100%;
+                    padding-bottom: 5em;
+                }
+                h1 {
+                    padding: 0 0 1em 0;
+                    font-family: $title-font;
+                }
+            }
+        }
+        .flowing-section {
+            width: 100%;
+            font-size: calc(0.7rem + 0.45vw);
+            line-height: 1.5em;
+            padding: 10em 0;
+            .flowing-container {
+                padding: 2em 3em;
+                @media only screen and (min-width: $medium-devices) {
+                    @include inline(space-between, row, center);
+                    gap: 8em;
+                    .flowing-image {
+                        width: 50%;
+                    }
+                    .flowing-text {
+                        width: 50%;
+                        text-align: left;
+                    }
+                }
+                img {
+                    max-width: 100%;
+                    padding-bottom: 5em;
+                }
+                h1 {
+                    padding: 0 0 1em 0;
+                    font-family: $title-font;
+                }
+            }
+        }
+        .users-section {
+            width: 100%;
+            font-size: calc(0.7rem + 0.45vw);
+            line-height: 1.5em;
+            .top-bg {
+                width: 100%;
+                height: 25vw;
+                background: url("./images/bg-section-top-mobile-2.svg") no-repeat;
+                background-size: cover;
+                @media only screen and (min-width: $large-devices) {
+                    height: 10.5vw;
+                    background: url("./images/bg-section-top-desktop-2.svg") no-repeat;
+                }
+            }
+            .buttom-bg {
+                width: 100%;
+                height: 27vw;
+                background: url("./images/bg-section-bottom-mobile-2.svg") no-repeat;
+                background-size: cover;
+                @media only screen and (min-width: $large-devices) {
+                    height: 12vw;
+                    background: url("./images/bg-section-bottom-desktop-2.svg") no-repeat;
+                }
+            }
+            .users-container {
+                background-color: $section-color;
+                padding: 5em 3em;
+                @media only screen and (min-width: $medium-devices) {
+                    @include inline(space-between, row-reverse, center);
+                    gap: 10em;
+                    .users-image {
+                        width: 50%;
+                    }
+                    .users-text {
+                        width: 50%;
+                        text-align: left;
+                    }
+                }
+                img {
+                    max-width: 100%;
+                    padding-bottom: 5em;
+                }
+                h1 {
+                    padding: 0 0 1em 0;
+                    font-family: $title-font;
+                }
+            }
+        }
+        .build-your-comunity-section {
+            width: 100%;
+            max-width: 47rem;
+            @include center;
+            padding: 10em 0;
+            h1 {
+                width: 80%;
+                @include center;
+                padding: 3em 0 1em 0;
+                font-family: $title-font;
+                margin-bottom: 1em;
+                font-size: calc(1rem + 1vw);
+            }
+            button {
+                @include button;
+            }
+        }
+    }

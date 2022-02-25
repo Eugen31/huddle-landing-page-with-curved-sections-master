@@ -1,0 +1,19 @@
+    // reset
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    // body
+    body {
+        width: 100%;
+        display: block;
+    }
+    
+    // container
+    .container {
+        width: 100%;
+        @include center;
+        font-family: $content-font;
+    }
